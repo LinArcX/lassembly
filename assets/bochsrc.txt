@@ -1,0 +1,13 @@
+# Configuration file for Bochs
+boot: cdrom
+display_library: x
+boot: a
+log: bochsout.txt
+mouse: enabled=0
+clock: sync=realtime
+cpu: ips=500000
+romimage: file=build/debug/iso/pardis.iso, address=0x0, readonly
+
+#romimage: file=/usr/share/bochs/BIOS-bochs-latest, address=0xf0000
+#vgaromimage: /usr/share/bochs/VGABIOS-elpin-2.40
+#floppya: 1_44=/dev/loop0, status=inserted
